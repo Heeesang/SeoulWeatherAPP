@@ -13,5 +13,6 @@ extension Bundle {
         guard let resource = NSDictionary(contentsOfFile: file) else {return ""}
         guard let key = resource["API_KEY"] as? String else { fatalError("Weather Info.plist에 API_KEY설정을 해주세요")}
         return key
+        
     }
 }

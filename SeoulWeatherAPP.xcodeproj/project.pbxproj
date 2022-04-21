@@ -14,6 +14,7 @@
 		05866212280FCF220036F9FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05866211280FCF220036F9FF /* MainViewController.swift */; };
 		05866218280FF63E0036F9FF /* WeatherInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05866217280FF63E0036F9FF /* WeatherInfo.plist */; };
 		0586621A280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05866219280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift */; };
+		AD01F15527712CC437EC10CA /* Pods_SeoulWeatherAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AA7604D93259B580F59BB7 /* Pods_SeoulWeatherAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		05866211280FCF220036F9FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05866217280FF63E0036F9FF /* WeatherInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeatherInfo.plist; sourceTree = "<group>"; };
 		05866219280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeoulWeatherAPP++Bundle.swift"; sourceTree = "<group>"; };
+		12AA7604D93259B580F59BB7 /* Pods_SeoulWeatherAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulWeatherAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8E2A4757B9C691083C897B /* Pods-SeoulWeatherAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulWeatherAPP.debug.xcconfig"; path = "Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4316319DCD41BE8C046BF2 /* Pods-SeoulWeatherAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulWeatherAPP.release.xcconfig"; path = "Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD01F15527712CC437EC10CA /* Pods_SeoulWeatherAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				058661FC280FCC4C0036F9FF /* SeoulWeatherAPP */,
 				058661FB280FCC4C0036F9FF /* Products */,
+				CA379501F00BCF7EBFF9E707 /* Pods */,
+				B05F59FCCFC122C0A8669D54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = SeoulWeatherAPP;
 			sourceTree = "<group>";
 		};
+		B05F59FCCFC122C0A8669D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12AA7604D93259B580F59BB7 /* Pods_SeoulWeatherAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA379501F00BCF7EBFF9E707 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E2A4757B9C691083C897B /* Pods-SeoulWeatherAPP.debug.xcconfig */,
+				AE4316319DCD41BE8C046BF2 /* Pods-SeoulWeatherAPP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0586620E280FCC4E0036F9FF /* Build configuration list for PBXNativeTarget "SeoulWeatherAPP" */;
 			buildPhases = (
+				DF163F3128C94EA9085EEFD9 /* [CP] Check Pods Manifest.lock */,
 				058661F6280FCC4C0036F9FF /* Sources */,
 				058661F7280FCC4C0036F9FF /* Frameworks */,
 				058661F8280FCC4C0036F9FF /* Resources */,
+				2FC9EE37BF85214FA2CC1DB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC9EE37BF85214FA2CC1DB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF163F3128C94EA9085EEFD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulWeatherAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		058661F6280FCC4C0036F9FF /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		0586620F280FCC4E0036F9FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8E2A4757B9C691083C897B /* Pods-SeoulWeatherAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		05866210280FCC4E0036F9FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4316319DCD41BE8C046BF2 /* Pods-SeoulWeatherAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
