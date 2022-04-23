@@ -16,6 +16,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+
         
         view.backgroundColor = .red
         
@@ -25,20 +28,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-        
-        tableView.delegate = self
-        tableView.dataSource = self
     }
-    
+}
+
+extension MainViewController{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as UITableViewCell
-                
-            cell.textLabel?.text = items[indexPath.row]
-        
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = items[indexPath.row]
         return cell
     }
 }

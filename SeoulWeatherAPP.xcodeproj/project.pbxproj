@@ -14,6 +14,7 @@
 		05866212280FCF220036F9FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05866211280FCF220036F9FF /* MainViewController.swift */; };
 		05866218280FF63E0036F9FF /* WeatherInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05866217280FF63E0036F9FF /* WeatherInfo.plist */; };
 		0586621A280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05866219280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift */; };
+		0586621C28122A0C0036F9FF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586621B28122A0C0036F9FF /* CustomCell.swift */; };
 		AD01F15527712CC437EC10CA /* Pods_SeoulWeatherAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AA7604D93259B580F59BB7 /* Pods_SeoulWeatherAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		05866211280FCF220036F9FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05866217280FF63E0036F9FF /* WeatherInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeatherInfo.plist; sourceTree = "<group>"; };
 		05866219280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeoulWeatherAPP++Bundle.swift"; sourceTree = "<group>"; };
+		0586621B28122A0C0036F9FF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		12AA7604D93259B580F59BB7 /* Pods_SeoulWeatherAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulWeatherAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E2A4757B9C691083C897B /* Pods-SeoulWeatherAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulWeatherAPP.debug.xcconfig"; path = "Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		AE4316319DCD41BE8C046BF2 /* Pods-SeoulWeatherAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulWeatherAPP.release.xcconfig"; path = "Target Support Files/Pods-SeoulWeatherAPP/Pods-SeoulWeatherAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				0586620B280FCC4E0036F9FF /* Info.plist */,
 				05866217280FF63E0036F9FF /* WeatherInfo.plist */,
 				05866211280FCF220036F9FF /* MainViewController.swift */,
+				0586621B28122A0C0036F9FF /* CustomCell.swift */,
 			);
 			path = SeoulWeatherAPP;
 			sourceTree = "<group>";
@@ -91,7 +94,6 @@
 				7F8E2A4757B9C691083C897B /* Pods-SeoulWeatherAPP.debug.xcconfig */,
 				AE4316319DCD41BE8C046BF2 /* Pods-SeoulWeatherAPP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,6 +214,7 @@
 			files = (
 				05866212280FCF220036F9FF /* MainViewController.swift in Sources */,
 				0586621A280FF79C0036F9FF /* SeoulWeatherAPP++Bundle.swift in Sources */,
+				0586621C28122A0C0036F9FF /* CustomCell.swift in Sources */,
 				058661FE280FCC4C0036F9FF /* AppDelegate.swift in Sources */,
 				05866200280FCC4C0036F9FF /* SceneDelegate.swift in Sources */,
 			);
