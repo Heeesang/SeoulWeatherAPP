@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct WeatherData:Codable{
+    var weather: Weather
+    var main: Main
+}
+
+struct Weather: Codable {
+    var main: String
+}
+
+struct Main: Codable {
+    var temp: Double
+}
+
